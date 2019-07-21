@@ -49,6 +49,9 @@
             "@symfony-scripts"
         ]
     },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+
     "extra": {
         "symfony-app-dir": "app",
         "symfony-bin-dir": "bin",

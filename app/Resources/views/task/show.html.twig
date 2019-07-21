@@ -2,5 +2,10 @@
 {% block title %}Tasks{% endblock %}
 
 {% block body %}
-    <h1>Show Tasks!</h1>
+    <h1>{{ task.name }}</h1>
+    <p>
+        Due date: {{ task.dueDate | date('d/m/Y') }}
+        Completed: {{ task.finished }}
+    </p>
+
 {% endblock %}
