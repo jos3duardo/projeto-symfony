@@ -27,6 +27,7 @@ class TaskController extends Controller
         $task = new Task();
         //passa os parametros do novo objeti
         $task->setName("My First Task");
+        $task->setFinished(true);
 
         //cria uma instancia do entity manager
         $em = $this->getDoctrine()->getManager();
