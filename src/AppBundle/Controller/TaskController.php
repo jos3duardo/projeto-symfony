@@ -4,8 +4,10 @@
 namespace AppBundle\Controller;
 
 
+use Sensio\Bundle\FrameworkExtraBundle\Configuration\Method;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
+use Symfony\Component\HttpFoundation\JsonResponse;
 
 class TaskController extends Controller
 {
@@ -14,7 +16,7 @@ class TaskController extends Controller
      */
     public function indexAction($name){
         $tasks = [
-          'Call Mari',
+            'Call Mari',
             'Folloe up Mathew',
             'Pay Amazon Bill'
         ];
@@ -22,5 +24,27 @@ class TaskController extends Controller
             'name'=> $name,
             'tasks' =>$tasks
         ]);
+    }
+
+    /**
+     * @Route("/task/show/", name="task_show")
+     */
+    public function showAction(){
+
+        return $this->render('task/show.html.twig');
+
+    }
+
+    /**
+     * @Route("/tasks.json")
+     * @Method("GET")
+     */
+    public function apiAction(){
+        $tasks = [
+            'Call Mari',
+            'Folloe up Mathew',
+            'Pay Amazon Bill'
+        ];
+        return new JsonResponse($tasks);
     }
 }

@@ -9,7 +9,7 @@
 
     <ul>
     {% for task in tasks %}
-        <li>{{ task }}</li>
+        <li><a href="{{ path('task_show') }}"> {{ task }} </a></li>
     {% endfor %}
     </ul>
 {% endblock %}
