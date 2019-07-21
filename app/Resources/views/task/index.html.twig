@@ -1,8 +1,15 @@
-{% extends base %}
-<h1>{{ name }}'s tasks </h1>
+{% extends 'base.html.twig' %}
+{% block title %}Tasks{% endblock %}
+{% block stylesheets %}
+    {{ parent() }}
+    <link rel="stylesheet" href="{{ asset('main.css') }}">
+{% endblock %}
+{% block body %}
+    <h1>{{ name }}'s tasks </h1>
 
-<ul>
-{% for task in tasks %}
-    <li>{{ task }}</li>
-{% endfor %}
-</ul>
+    <ul>
+    {% for task in tasks %}
+        <li>{{ task }}</li>
+    {% endfor %}
+    </ul>
+{% endblock %}
