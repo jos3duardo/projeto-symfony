@@ -24,6 +24,27 @@ class Task
     private $name;
 
     /**
+     * @ORM\Column(type="boolean")
+     */
+    private $finished;
+
+    /**
+     * @return mixed
+     */
+    public function getFinished()
+    {
+        return $this->finished;
+    }
+
+    /**
+     * @param mixed $finished
+     */
+    public function setFinished($finished)
+    {
+        $this->finished = $finished;
+    }
+
+    /**
      * @return mixed
      */
     public function getId()
