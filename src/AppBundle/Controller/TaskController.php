@@ -5,14 +5,22 @@ namespace AppBundle\Controller;
 
 
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
-use Symfony\Component\HttpFoundation\Response;
+use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 
-class TaskController
+class TaskController extends Controller
 {
     /**
-     * @Route("/tasks")
+     * @Route("/task/{name}")
      */
-    public function indexAction(){
-        return new Response('My tasks');
+    public function indexAction($name){
+        $tasks = [
+          'Call Mari',
+            'Folloe up Mathew',
+            'Pay Amazon Bill'
+        ];
+        return $this->render('task/index.html.twig',[
+            'name'=> $name,
+            'tasks' =>$tasks
+        ]);
     }
 }
