@@ -9,7 +9,7 @@
 
     <ul>
     {% for task in tasks %}
-        <li><a href="{{ path('task_show') }}"> {{ task }} </a></li>
+        <li><a href="{{ path('task_show',{'id':task.id}) }}"> {{ task.name }} ({{ task.dueDate |date('d-m-Y') }})</a></li>
     {% endfor %}
     </ul>
 {% endblock %}

@@ -26,8 +26,9 @@ class TaskController extends Controller
         //cria um novo objeto
         $task = new Task();
         //passa os parametros do novo objeti
-        $task->setName("My First Task");
+        $task->setName("My First Task 2");
         $task->setFinished(true);
+        $task->setDueDate( new  \DateTime());
 
         //cria uma instancia do entity manager
         $em = $this->getDoctrine()->getManager();
@@ -40,14 +41,13 @@ class TaskController extends Controller
     }
 
     /**
-     * @Route("/task/{name}")
+     * @Route("{name}")
      */
     public function indexAction($name){
-        $tasks = [
-            'Call Mari',
-            'Folloe up Mathew',
-            'Pay Amazon Bill'
-        ];
+        $em = $this->getDoctrine()->getManager();
+        $tasks = $em->getRepository('AppBundle:Task')
+                ->findAll();
+
         return $this->render('task/index.html.twig',[
             'name'=> $name,
             'tasks' =>$tasks
@@ -55,11 +55,20 @@ class TaskController extends Controller
     }
 
     /**
-     * @Route("/task/show/", name="task_show")
+     * @Route("show/{id}", name="task_show")
      */
-    public function showAction(){
+    public function showAction($id){
 
-        return $this->render('task/show.html.twig');
+        $em = $this->getDoctrine()->getManager();
+
+        $task = $em->getRepository("AppBundle:Task")
+                ->find($id);
+
+        //tratamento de erro
+        if (!$task){
+            throw $this->createNotFoundException("Task not Found");
+        }
+        return $this->render('task/show.html.twig',['task' => $task]);
 
     }
 

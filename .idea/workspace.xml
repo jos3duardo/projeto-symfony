@@ -19,18 +19,30 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/TaskController.php">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="456">
               <caret line="62" selection-start-line="62" selection-end-line="62" />
               <folding>
                 <element signature="e#42#68#0#PHP" expanded="true" />
                 <element signature="e#1267#1289#0#PHP" expanded="true" />
                 <element signature="e#1495#1516#1#PHP" expanded="true" />
+=======
+            <state relative-caret-position="1127">
+              <caret line="49" selection-start-line="49" selection-end-line="49" />
+              <folding>
+                <element signature="e#42#68#0#PHP" expanded="true" />
+                <element signature="e#1249#1265#1#PHP" expanded="true" />
+                <element signature="e#1326#1348#0#PHP" expanded="true" />
+                <element signature="e#1612#1628#1#PHP" expanded="true" />
+                <element signature="e#1817#1838#0#PHP" expanded="true" />
+>>>>>>> trabalhando_com_migration
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+<<<<<<< HEAD
         <entry file="file://$PROJECT_DIR$/app/Resources/views/task/show.html.twig">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="115">
@@ -44,6 +56,12 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="253">
               <caret line="11" column="54" selection-start-line="11" selection-start-column="54" selection-end-line="11" selection-end-column="54" />
+=======
+        <entry file="file://$PROJECT_DIR$/app/Resources/views/task/index.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="184">
+              <caret line="8" selection-start-line="8" selection-end-line="8" />
+>>>>>>> trabalhando_com_migration
               <folding>
                 <element signature="e#12#26#0#Twig" expanded="true" />
               </folding>
@@ -210,11 +228,11 @@
     <property name="settings.editor.selected.configurable" value="Symfony2.SettingsForm" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/app/Resources/views/task" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/web/css" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/Resources/views/task" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -254,7 +272,20 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< HEAD
     <option name="totallyTimeSpent" value="11856000" />
+=======
+    <option name="totallyTimeSpent" value="12119000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+>>>>>>> trabalhando_com_migration
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="-1" width="1368" height="727" extended-state="6" />
@@ -333,8 +364,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Resources/views/task/index.html.twig">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="253">
           <caret line="11" column="54" selection-start-line="11" selection-start-column="54" selection-end-line="11" selection-end-column="54" />
+=======
+        <state relative-caret-position="184">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+>>>>>>> trabalhando_com_migration
           <folding>
             <element signature="e#12#26#0#Twig" expanded="true" />
           </folding>
@@ -350,12 +386,23 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/TaskController.php">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="456">
           <caret line="62" selection-start-line="62" selection-end-line="62" />
           <folding>
             <element signature="e#42#68#0#PHP" expanded="true" />
             <element signature="e#1267#1289#0#PHP" expanded="true" />
             <element signature="e#1495#1516#1#PHP" expanded="true" />
+=======
+        <state relative-caret-position="1127">
+          <caret line="49" selection-start-line="49" selection-end-line="49" />
+          <folding>
+            <element signature="e#42#68#0#PHP" expanded="true" />
+            <element signature="e#1249#1265#1#PHP" expanded="true" />
+            <element signature="e#1326#1348#0#PHP" expanded="true" />
+            <element signature="e#1612#1628#1#PHP" expanded="true" />
+            <element signature="e#1817#1838#0#PHP" expanded="true" />
+>>>>>>> trabalhando_com_migration
           </folding>
         </state>
       </provider>

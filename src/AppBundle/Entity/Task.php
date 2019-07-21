@@ -24,6 +24,27 @@ class Task
     private $name;
 
     /**
+     * @ORM\Column(type="date")
+     */
+    private $due_date;
+
+    /**
+     * @return mixed
+     */
+    public function getDueDate()
+    {
+        return $this->due_date;
+    }
+
+    /**
+     * @param mixed $due_date
+     */
+    public function setDueDate($due_date)
+    {
+        $this->due_date = $due_date;
+    }
+
+    /**
      * @ORM\Column(type="boolean")
      */
     private $finished;
